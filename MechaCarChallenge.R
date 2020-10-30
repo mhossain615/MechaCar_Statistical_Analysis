@@ -9,3 +9,16 @@ lm(formula = mpg ~ vehicle_length + ground_clearance + spoiler_angle + AWD + veh
 
 # Using the summary() function, determine the p-value and the r-squared value for the linear regression model.
 summary(lm(mpg ~ vehicle_length + ground_clearance + spoiler_angle + AWD + vehicle_weight, data = MechaCar_mpg))
+
+# Challenge 2
+Suspension_Coil <- read_csv("Suspension_Coil.csv")
+
+
+#Write an RScript that creates a total_summary dataframe using the summarize() function to get the mean, median, variance, and standard deviation of the suspension coil's PSI column.
+
+#first
+total_summary <- summarize(.data=MechaCar_mpg ,Mean=mean(Suspension_Coil$PSI), Median=median(Suspension_Coil$PSI), Variance=var(Suspension_Coil$PSI),SD=sd(Suspension_Coil$PSI), .groups='keep')
+#second
+lot_summary = Suspension_Coil %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI), .groups = 'keep')
+
+
