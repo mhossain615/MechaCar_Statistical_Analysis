@@ -6,7 +6,7 @@ Based on the data, we notice that vehicle_length, spoiler_angle and AWD does not
 
 
 ![Calculations](https://github.com/mhossain615/MechaCar_Statistical_Analysis/blob/main/image1.JPG)
-!(https://github.com/mhossain615/MechaCar_Statistical_Analysis/blob/main/image2.JPG)
+![image](https://github.com/mhossain615/MechaCar_Statistical_Analysis/blob/main/image2.JPG)
 
 
 
